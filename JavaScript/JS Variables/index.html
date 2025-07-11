@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <p>Using var</p>
+    <p id="varDemo"></p>
+
+    <p>Using let</p>
+    <p id="letDemo"></p>
+
+    <p>Using const</p>
+    <p id="constDemo"></p>
+    <p id="testConst"></p>
+
+
+    <p>
+        | Difference               | `var`                           | `let`                       |
+| ------------------------ | ------------------------------- | --------------------------- |
+| Scope                    | Function-scoped                 | Block-scoped                |
+| Hoisting                 | Yes, initialized as `undefined` | Yes, but not initialized    |
+| Redeclaration            | Allowed                         | Not allowed                 |
+| Global object attachment | Yes                             | No                          |
+| Closure in loop          | Incorrect value                 | Correct value per iteration |
+
+    </p>
+
+
+    <p id="strNumDemo"></p>
+
+    <p>String Concanate</p>
+    <p id="strConcanate"></p>
+
+    <p>If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.</p>
+    <p id="strNumCon"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

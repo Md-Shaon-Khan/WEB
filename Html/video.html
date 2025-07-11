@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia Showcase</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <header>
+      <nav>
+        <div class="logo">🎼 My Media</div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Audio</a></li>
+          <li><a href="#">Video</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h1>🎵 Multimedia Player 🎬</h1>
+        <section class="media-section">
+          <h3>🎵 Audio</h3>
+          <audio controls src="Media/Yarin Primak - My Lord.mp3"></audio>
+        </section>
+
+        <section class="media-section">
+          <h3>📽️ Local Video</h3>
+          <video controls src="Media/13830677-hd_1920_1080_30fps.mp4"></video>
+        </section>
+
+        <section class="media-section">
+          <h3>📺 YouTube Video</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/GkZhGCJsIj8?si=9bOpxt_Qqu1O9ME8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          >
+          </iframe>
+        </section>
+        <section class="media-section" id="contact">
+          <h3>📬 Contact Us</h3>
+          <form class="contact-form">
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+
+            <label for="email">Your Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <label for="message">Your Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Write your message..."
+              required
+            ></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
