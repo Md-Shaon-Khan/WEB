@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+  <title>JS Event Handling</title>
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .card {
+      border-radius: 1rem;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+    .btn-custom {
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container my-5">
+    <div class="card bg-white p-4">
+      <h2 class="text-center text-dark mb-4">JavaScript Event Handling</h2>
+
+      <div class="mb-4">
+        <h5 class="text-primary">Using External JS Function</h5>
+        <button onclick="showTime()" class="btn btn-success btn-custom mb-2">Show Time</button>
+        <p id="dateDemo1" class="text-secondary"></p>
+      </div>
+
+      <hr/>
+
+      <div class="mb-2">
+        <h5 class="text-primary">Using Inline Event</h5>
+        <button onclick="this.innerHTML = Date()" class="btn btn-info btn-custom">Click to See Time</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  
+  <!-- External JS -->
+  <script src="script.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+          integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+          integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+          crossorigin="anonymous"></script>
+
+</body>
+</html>
