@@ -1,0 +1,191 @@
+/* Reset */
+* {
+  margin: 0; /* remove default margin */
+  padding: 0; /* remove default padding */
+  box-sizing: border-box; /* include padding+border in width/height */
+  font-family: "Arial", sans-serif; /* global font */
+}
+
+/* Body */
+body {
+  line-height: 1.6; /* better readability */
+  background: #f4f4f4; /* light gray */
+  color: #333; /* dark text */
+}
+
+/* Header */
+header {
+  display: flex; /* flexbox for layout */
+  justify-content: space-between; /* space between logo/nav/button */
+  align-items: center; /* center vertically */
+  padding: 15px 50px; /* spacing */
+  background: #222; /* dark background */
+  color: #fff; /* white text */
+  position: sticky; /* stays on top when scrolling */
+  top: 0;
+}
+
+.logo {
+  font-size: 22px; /* larger text */
+  font-weight: bold; /* bold */
+}
+
+.logo span {
+  color: #ff4b4b; /* highlight color */
+}
+
+nav ul {
+  display: flex; /* horizontal menu */
+  list-style: none; /* remove bullets */
+  gap: 20px; /* spacing */
+}
+
+nav ul li a {
+  text-decoration: none; /* remove underline */
+  color: #fff; /* white text */
+  transition: 0.3s; /* smooth hover */
+}
+
+nav ul li a:hover {
+  color: #ff4b4b; /* red on hover */
+}
+
+#theme-btn {
+  background: #ff4b4b; /* red button */
+  color: #fff; /* white text */
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#theme-btn:hover {
+  background: #e63939; /* darker red */
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh; /* almost full screen */
+  background: url("image2.jpg") no-repeat center center/cover; /* hero image */
+  display: flex; /* flexbox */
+  flex-direction: column; /* stack vertically */
+  justify-content: center; /* center vertically */
+  align-items: center; /* center horizontally */
+  text-align: center;
+  color: #fff; /* white text */
+}
+
+.hero h1 {
+  font-size: 50px; /* large title */
+}
+
+.hero h1 span {
+  color: #ff4b4b; /* highlight name */
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 10px 0 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff4b4b;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e63939;
+}
+
+/* Sections */
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* About Section */
+#about p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+#about table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+#about table th,
+#about table td {
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+/* Projects Section */
+#projects ul {
+  list-style: square;
+  display: inline-block;
+  text-align: left;
+}
+
+/* Contact Form */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form input,
+form textarea,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+form button {
+  background: #ff4b4b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #e63939;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #222;
+  color: #f4f4f4;
+}
+
+.dark-mode header {
+  background: #111;
+}
+
+.dark-mode footer {
+  background: #111;
+}

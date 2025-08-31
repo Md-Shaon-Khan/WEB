@@ -1,0 +1,92 @@
+/* Basic reset for body */
+body {
+    margin: 0; /* Remove default margin [works] */
+    padding: 0; /* Remove default padding [works] */
+    font-family: Arial, sans-serif; /* Set font [works] */
+    background-color: #f2f2f2; /* Light background [works] */
+    display: flex; /* Use flex for centering [works] */
+    justify-content: center; /* Center horizontally [works] */
+    align-items: center; /* Center vertically [works] */
+    height: 100vh; /* Full viewport height [works] */
+}
+
+/* Container for the whole chat */
+.chat-container {
+    width: 400px; /* Set width [works] */
+    background-color: #fff; /* White background [works] */
+    border-radius: 10px; /* Rounded corners [works] */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Add shadow [works] */
+    display: flex; /* Flex layout [works] */
+    flex-direction: column; /* Stack elements vertically [works] */
+    overflow: hidden; /* Hide overflow [works] */
+}
+
+/* Chat header */
+.chat-header {
+    background-color: #007bff; /* Blue header [works] */
+    color: white; /* White text [works] */
+    padding: 15px; /* Padding inside header [works] */
+    text-align: center; /* Center header text [works] */
+    font-size: 18px; /* Font size [works] */
+}
+
+/* Chat messages area */
+.chat-box {
+    flex: 1; /* Take remaining space [works] */
+    padding: 15px; /* Padding inside chat [works] */
+    overflow-y: auto; /* Scroll if messages exceed height [works] */
+    background-color: #e5e5e5; /* Light grey background [works] */
+}
+
+/* Each message */
+.message {
+    max-width: 70%; /* Limit width of messages [works] */
+    padding: 10px 15px; /* Padding inside message [works] */
+    margin-bottom: 10px; /* Space between messages [works] */
+    border-radius: 20px; /* Rounded bubble [works] */
+    word-wrap: break-word; /* Break long words [works] */
+}
+
+/* Messages from sender */
+.sender {
+    background-color: #007bff; /* Blue bubble [works] */
+    color: white; /* White text [works] */
+    align-self: flex-end; /* Align to right [works] */
+}
+
+/* Messages from receiver */
+.receiver {
+    background-color: #ccc; /* Grey bubble [works] */
+    color: black; /* Black text [works] */
+    align-self: flex-start; /* Align to left [works] */
+}
+
+/* Input area */
+.chat-input {
+    display: flex; /* Flex layout [works] */
+    border-top: 1px solid #ccc; /* Top border [works] */
+}
+
+/* Input box */
+#message-input {
+    flex: 1; /* Take remaining space [works] */
+    padding: 10px; /* Padding inside input [works] */
+    border: none; /* Remove default border [works] */
+    outline: none; /* Remove outline [works] */
+    font-size: 16px; /* Font size [works] */
+}
+
+/* Send button */
+#send-btn {
+    padding: 10px 15px; /* Padding inside button [works] */
+    background-color: #007bff; /* Blue button [works] */
+    color: white; /* White text [works] */
+    border: none; /* Remove border [works] */
+    cursor: pointer; /* Pointer cursor [works] */
+    font-size: 16px; /* Font size [works] */
+}
+
+/* Button hover effect */
+#send-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover [works] */
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <div class="logo">My<span>Portfolio</span></div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-btn">🌙 Dark Mode</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Hello, I'm <span>Your Name</span></h1>
+    <p>A Web Developer & Designer</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a student learning HTML, CSS, and JavaScript. 
+      This is my sample portfolio project that shows my skills.
+    </p>
+    <table border="1">
+      <tr><th>Skill</th><th>Level</th></tr>
+      <tr><td>HTML</td><td>Advanced</td></tr>
+      <tr><td>CSS</td><td>Intermediate</td></tr>
+      <tr><td>JavaScript</td><td>Beginner</td></tr>
+    </table>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <ul>
+      <li>Portfolio Website</li>
+      <li>Restaurant Website</li>
+      <li>Calculator</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label>Name:</label><br>
+      <input type="text" name="name" required><br><br>
+      <label>Email:</label><br>
+      <input type="email" name="email" required><br><br>
+      <label>Message:</label><br>
+      <textarea name="message" required></textarea><br><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Portfolio | Made with ❤</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
