@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.carousel img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border: 2px solid #f1c9c9;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
